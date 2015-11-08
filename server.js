@@ -32,7 +32,7 @@ app.use(morgan('dev'));
 
 // set up our one route to the index.html file
 app.get('/', function(req, res) {
-	res.sendFile(path.join(__dirname + '/public/index.html'));
+	res.sendFile(path.join(__dirname + '/index.html'));
 });
 
 
@@ -43,7 +43,8 @@ app.get('/', function(req, res) {
 
 // PORT
 
-var server = app.listen(3000, function () {
+var server = app.listen(3000
+, function () {
   var host = server.address().address;
   var port = server.address().port;
 
