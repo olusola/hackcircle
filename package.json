@@ -1,0 +1,28 @@
+{
+  "name": "hackcircle",
+  "version": "1.0.0",
+  "description": "landing page",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/olusola/hackcircle.git"
+  },
+  "keywords": [
+    "node",
+    "js"
+  ],
+  "author": "olusola ak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/olusola/hackcircle/issues"
+  },
+  "homepage": "https://github.com/olusola/hackcircle",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "morgan": "^1.6.1"
+  }
+}
