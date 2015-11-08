@@ -3,6 +3,8 @@ var	app = express();
 var	path = require('path');
 var 	bodyParser = require('body-parser'); // get body-parser
 var 	morgan = require('morgan'); // used to see requests
+var	cookieParser = require('cookie-parser');
+var	methodOverride		= require('method-override');
 
 
 
@@ -25,7 +27,8 @@ app.use(function(req, res, next) {
 
 //  log all requests to the console
 app.use(morgan('dev'));
-
+app.use(cookieParser());
+app.use(methodOverride());		// simulate DELETE and PUT
 
 
 // ROUTES
