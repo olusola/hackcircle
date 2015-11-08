@@ -32,7 +32,7 @@ app.use(morgan('dev'));
 
 // set up our one route to the index.html file
 app.get('/', function(req, res) {
-	res.sendFile(path.join(__dirname + '/public/views/index.html'));
+	res.sendFile(path.join(__dirname + '/public/index.html'));
 });
 
 
